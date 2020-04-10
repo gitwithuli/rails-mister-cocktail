@@ -1,0 +1,7 @@
+<h3>Add a new dose</h3>
+<%= simple_form_for [cocktail, dose] do |f| %>
+  <%= render 'doses/errors', object: f.object %>
+  <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
+  <%= f.input :description, as: :radio_buttons, collection: %w( 5cl 10cl 15cl 20cl 25cl 30cl 40cl 50cl), wrapper: :horizontal_collection_inline %>
+  <%= f.button :submit, class: "btn btn-danger" %>
+<% end %>

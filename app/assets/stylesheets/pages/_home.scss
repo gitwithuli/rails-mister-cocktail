@@ -1,1 +1,30 @@
 // Specific CSS for your home-page
+body {
+
+background-color: #d9dbdd;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+font-weight: lighter;
+color: #2b580c;
+}
+
+
+.show-link {
+  text-decoration: none;
+  color: black;
+}
+
+.show-link:hover {
+  text-decoration: none;
+  color: #2b580c;
+}
+
+
+.table-bordered{
+  border: 2px solid white;
+}

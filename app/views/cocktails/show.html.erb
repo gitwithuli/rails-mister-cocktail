@@ -3,10 +3,11 @@
   <h1 class="header"><%= @cocktail.name %></h1>
   <p class="link"><%= link_to "Back to all cocktails", root_path, class: "show-link" %></p>
 
+<div class="banner" style="background-image: url('<%= cl_image_path @cocktail.photo.key, height: 400, width: 500, crop: :fill %>')" >
 
   <div class="row">
     <div class="col-sm-12 col-md-6">
-      <h3>Recipe</h3>
+      <h3 class="dose-header">Recipe</h3>
       <table class="table table-bordered">
         <tbody>
           <thead>
@@ -16,8 +17,8 @@
           </thead>
           <% @cocktail.doses.each do |dose| %>
             <tr>
-              <td><%= dose.ingredient.name %></td>
-              <td><%= dose.description %></td>
+              <td class="table-head"><%= dose.ingredient.name %></td>
+              <td class="table-head"><%= dose.description %></td>
               <td>
                 <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
                   <i class="fa fa-trash destroy_dose"></i>
@@ -32,5 +33,6 @@
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
   </div>
+</div>
 
 </div>

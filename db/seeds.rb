@@ -1,5 +1,7 @@
 require 'open-uri'
 
+puts"Destroying..."
+
 puts "Destroy ingredients"
 Ingredient.destroy_all if Rails.env.development?
 
@@ -13,3 +15,7 @@ ingredients["drinks"].each do |ingredient|
   i = Ingredient.create(name: ingredient["strIngredient1"])
   puts "create #{i.name}"
 end
+
+
+
+puts 'Done..'

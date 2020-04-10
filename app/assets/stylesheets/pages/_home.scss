@@ -1,9 +1,7 @@
 // Specific CSS for your home-page
 body {
-
-background-color: #d9dbdd;
+  background: #929699;
 }
-
 .container {
   text-align: center;
 }
@@ -27,4 +25,28 @@ color: #2b580c;
 
 .table-bordered{
   border: 2px solid white;
+}
+
+.dose-header{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.destroy_dose {
+  color: white;
+}
+
+.dose-header:hover{
+  color: white;
+}
+.destroy_dose:hover {
+  color: gold;
+}
+.form-black {
+  color: black;
+}
+
+.table-head:hover {
+  color: white;
 }

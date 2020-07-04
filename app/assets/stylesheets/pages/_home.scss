@@ -8,18 +8,18 @@ body {
 
 .header {
 font-weight: lighter;
-color: #2b580c;
+color: white;
 }
 
 
 .show-link {
   text-decoration: none;
-  color: black;
+  color: orange;
 }
 
 .show-link:hover {
   text-decoration: none;
-  color: #2b580c;
+  color: orange;
 }
 
 
@@ -28,7 +28,7 @@ color: #2b580c;
 }
 
 .dose-header{
-  color: black;
+  color: orange;
   font-weight: bold;
   font-size: 20px;
 }
@@ -37,16 +37,8 @@ color: #2b580c;
   color: white;
 }
 
-.dose-header:hover{
-  color: white;
-}
-.destroy_dose:hover {
-  color: gold;
-}
 .form-black {
-  color: black;
+  color: white;
 }
 
-.table-head:hover {
-  color: white;
-}
+
